@@ -72,5 +72,11 @@ public class ShoppingCart implements Serializable {
         totalQuantity--;
         totalAmount = totalAmount.subtract(productPrice);
     }
+    
+    public void empty() {
+        lines.clear();
+        totalQuantity = 0;
+        totalAmount = BigDecimal.ZERO;
+    }
 	
 }

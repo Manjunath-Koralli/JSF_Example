@@ -2,12 +2,12 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,20 +20,38 @@ p {
     padding: 0;
 }
 
-a:link, a:visited {
-    color: #1f778d;
+input, button, select {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
 }
 
-a:hover, a:active {
-    color: #76cbe0;
+input, select {
+    background-color: white;
+    color: black;
+    border: 1px solid #808080;
+    padding: 0.25em;
+}
+
+option {
+    background-color: white;
+    color: black;
+}
+
+input[readonly] {
+    color: #808080;
+}
+
+input[type="submit"], input[type="button"] {
+    border-radius: 0.25em;
+    padding: 0.25em 0.75em;
 }
 
 body > header {
     padding: 1em;
     clear: both;
+    text-align: center;
     background-color: #f15b2a;
     color: white;
-    text-align: center;
 }
 
 body > header > h1 {
@@ -51,10 +69,10 @@ body > section {
 body > footer {
     padding: 0.5em;
     clear: both;
-    background-color: #2a9fbc;
-    color: #e5e5e5;
     font-size: 0.8em;
     text-align: center;
+    background-color: #2a9fbc;
+    color: #e5e5e5;
 }
 
 body > footer > p {
@@ -115,5 +133,44 @@ body > footer > p {
     background-color: #f0f0f0;
 }
 
+ul.validation-messages {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
 
+ul.validation-messages li {
+    margin: 0.5em 0;
+    padding: 0;
+}
 
+.form-grid {
+    width: 100%;
+}
+
+.form-column-label {
+    white-space: nowrap;
+    padding-right: 1em;
+}
+
+.form-column-input {
+    width: 100%;
+}
+
+.button-right {
+    margin-top: 0.5em;
+    float: right;
+    clear: both;
+}
+
+a:link, a:visited {
+    color: #1f778d;
+}
+
+a:hover, a:active {
+    color: #76cbe0;
+}
+
+.validation-messages {
+    color: red;
+}
